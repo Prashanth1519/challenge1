@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Details</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Student Details</h1>
+    <div class="filter-section">
+      <label for="subject">Select Subject:</label>
+      <select id="subject">
+        <option value="English">English</option>
+        <option value="Maths">Maths</option>
+        <option value="Science">Science</option>
+        <option value="SocialScience">Social Science</option>
+      </select>
+    </div>
+    <div class="filter-options">
+      <label><input type="radio" name="filter" value="Above"> Above</label>
+      <label><input type="radio" name="filter" value="Below"> Below</label>
+      <label><input type="radio" name="filter" value="Between"> Between</label>
+      <input type="text" id="value1" placeholder="Value 1">
+      <input type="text" id="value2" placeholder="Value 2" style="display: none;">
+    </div>
+    <div class="buttons">
+      <button id="filterBtn" class="btn">Filter</button>
+      <button id="clearBtn" class="btn btn-clear">Clear</button>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th data-column="SNo">S.No</th>
+          <th data-column="name">Name</th>
+          <th data-column="English">English</th>
+          <th data-column="Maths">Maths</th>
+          <th data-column="Science">Science</th>
+          <th data-column="SocialScience">Social Science</th>
+        </tr>
+      </thead>
+      <tbody id="studentTable">
+        <!-- Dynamic content -->
+      </tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

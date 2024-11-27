@@ -1,0 +1,109 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .filter-section {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+  }
+  
+  .filter-section label {
+    margin-right: 10px;
+  }
+  
+  .filter-options, .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+  }
+  
+  .filter-options label, .filter-options input {
+    margin-right: 10px;
+  }
+  
+  .buttons {
+    justify-content: center;
+  }
+  
+  button.btn {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.btn:hover {
+    background-color: #4cae4c;
+  }
+  
+  button.btn-clear {
+    background-color: #d9534f;
+  }
+  
+  button.btn-clear:hover {
+    background-color: #c9302c;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 10px;
+  }
+  
+  th {
+    cursor: pointer;
+    background-color: #f2f2f2;
+    position: relative; /* Needed for the arrow icon */
+    padding-right: 25px; /* Space for the arrow icon */
+  }
+  
+  th:hover {
+    background-color: #e0e0e0;
+  }
+  
+  th:after {
+    content: '⇅';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #aaa;
+  }
+  
+  .highlight {
+    background-color: #ffeb3b;
+  }
+  
